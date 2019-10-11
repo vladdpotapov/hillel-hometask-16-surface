@@ -1,0 +1,18 @@
+@mixin text ($fz, $fw, $lh, $tt, $ls, $col) {
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    text-transform: $tt;
+    letter-spacing: $ls;
+    color: $col;
+}
+
+@mixin links ($fz, $fw, $lh, $tt, $ls, $td, $col) {
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    text-transform: $tt;
+    letter-spacing: $ls;
+    text-decoration: $td;
+    color: $col;
+}

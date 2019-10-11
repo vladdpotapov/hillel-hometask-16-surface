@@ -1,2 +1,180 @@
 @import "fonts";
 @import "reset";
+@import "variables";
+@import "mixins";
+@import "templates";
+
+// GENERAL
+* {
+    box-sizing: border-box;
+}
+
+// HEADER
+.header {
+    background-color: $color-03;
+
+    .header__overlay {
+        background-image: url(../img/header-bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 54px 0 110px 0;
+    }
+}
+
+.header__content-frame {
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+// Header - Topbox
+.header__topbox {
+    display: flex;
+    align-items: center;
+}
+
+// Header - Topbox - Logo
+.logo {
+    transition: all 0.3s ease;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.1);
+}
+
+// Header - Topbox - Coach and Athlets
+.coach-box {
+    margin-left: auto;
+
+    .coach-box__text {
+        font-family: "Proxima Nova Light";
+        @include text (14px, 300, 34.49px, uppercase, 0.7px, $color-05);
+    }
+}
+
+// Header - Content
+.header__content-box {
+    margin-top: 309px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+// Header - Headings
+.text-box-01 {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 3;
+}
+
+// Header - Diagonal Line
+.text-box-01:before {
+    content: '';
+    width: 5px;
+    height: 350px;
+    background-color: $color-01;
+    position: absolute;
+    top: -120px;
+    left: 33.5%;
+    transform: rotate(37deg);
+    z-index: 2;
+}
+
+.text-box-02 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+.header__text {
+    font-family: "Proxima Nova Bold";
+    @include text (90px, 700, 31.32px, uppercase, 3px, $color-05);
+}
+
+// Header - Navigation
+.nav {
+    margin-top: 35px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    margin-left: 50px;
+}
+
+.menu__item:first-child {
+    margin-left: 0;
+}
+
+.menu-item__link {
+    font-family: "Proxima Nova Light";
+    @include links (14px, 300, 34.49px, uppercase, 0.7px, none, $color-02);
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $color-05;
+    }
+}
+
+// Header - Buttons
+.header__link-box {
+    margin: 181px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.button:first-child {
+    margin-left: 0;
+}
+
+// Buttons - Text Styles
+.button__text-download {
+    font-family: "Proxima Nova Light";
+    @include links (14px, 300, 14px, uppercase, 0.7px, none, $color-05);
+    position: relative;
+}
+
+.button__text-store {
+    font-family: "Proxima Nova Regular";
+    @include links (14px, 400, 14px, uppercase, 0.7px, none, $color-05);
+}
+
+// Buttons - Adding and Styling Icons
+.button__text-apple:before {
+    @extend %button-icons;
+    background-image: url(../img/icon-apple.png);
+}
+
+.button__text-play:before {
+    @extend %button-icons;
+    background-image: url(../img/icon-play.png);
+    top: -5px;
+}
+
+// Buttons - Links
+.button__link {
+    padding: 25px 50px 25px 105px;
+    background-color: $color-01;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $color-02;
+    }
+}
+
+.button__link-play {
+    padding: 25px 20px 25px 125px;
+}
