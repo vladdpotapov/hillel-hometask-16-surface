@@ -12,14 +12,14 @@
 // HEADER
 .header {
     background-color: $color-03;
+}
 
-    .header__overlay {
-        background-image: url(../img/header-bg-desktop.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 54px 0 110px 0;
-    }
+.header__overlay {
+    background-image: url(../img/header-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 54px 0 110px 0;
 }
 
 .header__content-frame {
@@ -230,5 +230,122 @@
 
     .header__link-box {
         margin-top: 116px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__overlay {
+        padding-bottom: 20px;
+    }
+
+    .header__content-frame {
+        width: 100%;
+        padding: 0;
+    }
+
+    .header__topbox {
+        justify-content: center;
+    }
+
+    .coach-box {
+        display: none;
+    }
+
+    // Text
+    .header__content-box {
+        margin-top: 140px;
+    }
+
+    .text-box-01 {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+
+    .text-box-02 {
+        justify-content: flex-end;
+        margin: 10px 0 0 20%;
+        text-align: left;
+    }
+
+    .header__text {
+        font-size: 32px;
+        letter-spacing: 1.6px;
+        line-height: 40px;
+    }
+
+    // Dioganal Line
+    .text-box-01:before {
+        height: 250px;
+        top: -60px;
+        left: 45%;
+        z-index: -1;
+    }
+
+    // Navigation
+    .nav {
+        order: 2;
+        margin-top: 46px;
+        display: flex;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu__item {
+        margin-left: 30px;
+    }
+
+    .menu__item:first-child {
+        margin-left: 0;
+    }
+
+    .menu-item__link {
+        font-size: 12px;
+    }
+
+    // Buttons
+    .header__link-box {
+        order: 1;
+    }
+
+    .button {
+        display: flex;
+        width: 142px;
+        margin-left: 8px;
+    }
+
+    .button__link-apple {
+        padding: 8px 17px 8px 40px;
+    }
+
+    .button__link-play {
+        padding: 8px 25px 8px 50px;
+    }
+    .button__text-download {
+        font-size: 8px;
+        letter-spacing: 0.4px;
+    }
+
+    .button__text-store {
+        font-size: 8px;
+    }
+
+    .button__text-apple:before {
+        background-size: 23px;    
+        left: -35px;
+    }
+    
+    .button__text-play:before {
+        background-size: 20px;
+        top: -5px;
+        left: -35px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        min-width: 320px;
     }
 }
