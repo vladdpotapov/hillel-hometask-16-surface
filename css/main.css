@@ -356,6 +356,34 @@ table {
   position: relative;
 }
 
+.slider-switchers {
+  display: none;
+}
+
+.circle-box {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 10px;
+  height: 12px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  border: none;
+  margin-left: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.circle:hover {
+  background-color: #5e42b0;
+}
+
+.circle:first-child {
+  margin-left: 0;
+}
+
 .growth-box {
   background-color: #5e42b0;
   padding: 80px 0 90px 0;
@@ -649,6 +677,89 @@ table {
     background-size: 20px;
     top: -5px;
     left: -35px;
+  }
+
+  .athlets {
+    padding: 0;
+  }
+
+  .athlets__content-frame {
+    width: 100%;
+    padding: 0 20px 0 15px;
+  }
+
+  .title-h1-box {
+    padding: 25px 0 245px 0;
+  }
+
+  .title-h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .connection-box {
+    display: none;
+  }
+
+  .collaboration-box {
+    padding: 81px 0 27px 0;
+  }
+
+  .slider-switchers {
+    display: block;
+  }
+
+  .title-h2 {
+    font-size: 28px;
+  }
+
+  .text-box {
+    margin-top: 27px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .athlets__content-frame {
+    min-width: 60%;
+  }
+
+  .athlets::before {
+    width: 192px;
+    height: 281px;
+    background-size: 200px;
+    top: 14.5%;
+    left: 25%;
+  }
+
+  .title-h1-box::before {
+    width: 3px;
+    height: 250px;
+    top: 11%;
+    left: 55%;
+  }
+
+  .title-h1::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 90px;
+    left: 24%;
+  }
+
+  .collaboration-box::before {
+    top: -220px;
+    left: 55px;
+  }
+
+  .growth-box {
+    display: none;
   }
 }
 @media (max-width: 320px) {
