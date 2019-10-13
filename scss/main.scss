@@ -180,10 +180,10 @@
     padding: 25px 20px 25px 125px;
 }
 
-// Athlets - Content Boxes - Layout
-.athlets {
+//===================================ATHLETS====================================
+.athlets, .section {
     padding: 112px 0 0 0;
-    position: relative;                  //for a footballer on a background
+    position: relative;      //for a footballer on a background
 }
 
 // Athlets - Footballer Image
@@ -353,7 +353,139 @@
     @include text (18px, 700, 15px, uppercase, 0.9px, $color-10);
 }
 
-// MEDIA
+//===================================PLAYERS====================================
+.players {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.players::before {                  //basketballer
+    content: '';
+    display: block;   
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: -3%;
+    left: 40%;
+    background-image: url(../img/basketballer.png);
+    background-repeat: no-repeat;
+    background-size: 87%;
+    z-index: 5;
+}
+
+.players__title-h1-box {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.players__title-h1-box::before {    //dioganal line
+    content: '';
+    display: block;
+    width: 5px;
+    height: 400px;
+    background-color: $color-02;
+    position: absolute;
+    top: -185%;
+    left: 82%;
+    transform: rotate(35deg);
+    z-index: 1;  
+}
+
+.players__title-h1 {
+    font-family: "Proxima Nova Bold";
+    @include text (90px, 700, 60px, uppercase, none, $color-07);
+    position: relative;
+}
+
+.players__title-h1:before {         //plus image
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: 77%;
+}
+
+.players__title-h1:after {          //plus image
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/plus-02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+
+.players__connection-box {
+    padding: 0 0 50px 0;
+    margin-top: 94px;
+}
+
+.players__collaboration-box {
+    background-color: $color-06;
+    padding: 55px 0 50px 0;
+    position: relative; 
+}
+
+.players__collaboration-box:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -33%;
+    left: 81%;
+}
+
+.players__collaboration-box:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 400px;
+    background-color: $color-02;
+    position: absolute;
+    top: -50%;
+    left: 59%;
+    transform: rotate(35deg);
+    z-index: 1;  
+}
+
+.players__content-box {
+    display: flex;
+    justify-content: start; 
+}
+
+.players__content-frame {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.growth-box--bgcolor {
+    background: $color-03;
+}
+
+.title-h2-count__number--color {
+    color: $color-01;
+}
+
+.players__growth-box {
+    padding: 98px 0 92px 0;
+}
+
+//======================================MEDIA===================================
 @media (max-width: 1140px) {
     // Header
     .header__content-frame {
@@ -442,6 +574,7 @@
 
     .text-box {
         width: 90%;
+        margin-top: 31px;
     }
 
     .text {
@@ -457,9 +590,57 @@
         padding: 40px 0 38px 0;
     }
 
-    .growth-box {
-        padding: 40px 0 37px 0;
+    // .growth-box {
+    //     padding: 40px 0 37px 0;
+    // }
+
+    // Players
+    .players__content-frame {
+        margin-left: 30px;
     }
+
+    .players::before {
+        top: 8%;
+        left: 40%;
+        background-size: 100%;
+    }
+
+    .players__title-h1-box:before {
+        display: none;
+    }
+
+    .players__title-h1:before {
+        top: 20px;
+        left: 105%;
+    }
+
+    .players__title-h1:after {
+        top: 60%;
+        left: 110%;
+    }
+
+    .players__collaboration-box:before {
+        display: none;
+    }
+
+    .players__collaboration-box:after {
+        top: -90%;
+        left: 78%;
+    }
+
+    .players__connection-box {
+        margin-top: 59px;
+        padding-bottom: 17px;
+    }
+
+    .players__collaboration-box {
+        padding: 63px 0 70px 0;
+    }
+
+    .players__growth-box {
+        padding: 52px 0 55px 0;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -655,6 +836,69 @@
 
     .growth-box {
         display: none;
+    }
+
+    // PLAYERS
+    .players {
+        padding-top: 35px;
+    }
+
+    .players__content-frame {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .players__title-h1 {
+        font-size: 50px;
+    }
+
+    .players__connection-box,
+    .players__collaboration-box {
+        display: none;
+    }
+
+    .players__growth-box {
+        background-color: $color-09;
+        margin-top: 70%;
+        padding-bottom: 27px;
+        display: flex;
+    }
+
+    .players:before {
+        width: 100%;
+        height: 100%;
+        background-size: 90%;
+        top: 23%;
+        left: 0;
+        z-index: 3;
+    }
+
+    .players__title-h1:before {
+        top: 150%;
+        left: 20%;  
+    }
+
+    .players__title-h1:after {
+        top: 125%;
+        left: 10%;
+    }
+
+    .title-h2-count--color2 {
+        border-bottom: 5px solid $color-01;
+    }
+
+    .title-h2-count__number--color2 {
+        color: $color-10;
+    }
+
+    .text--color2 {
+        color: $color-10;
+    }
+
+    .growth__text {
+        letter-spacing: 0.75px;
+        line-height: 18px;
     }
 }
 
