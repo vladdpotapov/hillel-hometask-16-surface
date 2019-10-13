@@ -88,6 +88,14 @@ table {
   left: -55px;
 }
 
+.title-h2-count {
+  width: 20px;
+  height: 25px;
+  border-bottom: 5px solid #5e42b0;
+  border-radius: 2px;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -274,6 +282,158 @@ table {
   padding: 25px 20px 25px 125px;
 }
 
+.athlets {
+  padding: 112px 0 0 0;
+  position: relative;
+}
+
+.athlets::before {
+  content: "";
+  display: block;
+  width: 678px;
+  height: 950px;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background-image: url(../img/footballer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.title-h1-box::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 800px;
+  background-color: #9172e6;
+  position: absolute;
+  top: -2%;
+  left: 25%;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+.connection-box::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -80%;
+  left: 15%;
+}
+
+.collaboration-box::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/plus-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -106%;
+  left: 13.5%;
+}
+
+.content-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.connection-box {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.collaboration-box {
+  background-color: #f5f4fa;
+  padding: 55px 0 50px 0;
+  position: relative;
+}
+
+.growth-box {
+  background-color: #5e42b0;
+  padding: 80px 0 90px 0;
+}
+
+.athlets__content-frame {
+  width: 50%;
+  position: relative;
+}
+
+.title-h1-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-h1 {
+  font-family: "Proxima Nova Bold";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: none;
+  color: #e7e7e7;
+}
+
+.connection-box {
+  margin-top: 94px;
+}
+
+.title-h2-box {
+  display: flex;
+  align-items: center;
+}
+
+.title-h2 {
+  font-family: "Proxima Nova Bold";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34.49px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: #c1c1c1;
+  margin-left: 13px;
+}
+
+.text-box {
+  margin-top: 31px;
+  width: 70%;
+}
+
+.text {
+  font-family: "Proxima Nova Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.text--color {
+  color: #ffffff;
+}
+
+.title-h2-count--color {
+  border-bottom: 5px solid #efefef;
+}
+
+.title-h2-count__number {
+  font-family: "Proxima Nova Bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: #000000;
+}
+
 @media (max-width: 1140px) {
   .header__content-frame {
     width: 95%;
@@ -328,6 +488,60 @@ table {
 
   .header__link-box {
     margin-top: 116px;
+  }
+
+  .title-h1-box {
+    align-items: flex-end;
+  }
+
+  .athlets {
+    padding-top: 82px;
+  }
+
+  .athlets__content-frame {
+    min-width: 60%;
+  }
+
+  .athlets::before {
+    background-size: 550px;
+    top: 10%;
+    left: -25%;
+  }
+
+  .title-h1-box::before {
+    top: 5%;
+    left: 2%;
+  }
+
+  .connection-box::before {
+    top: -73%;
+    left: 6%;
+  }
+
+  .collaboration-box::before {
+    top: -109%;
+    left: 3%;
+  }
+
+  .text-box {
+    width: 90%;
+  }
+
+  .text {
+    font-size: 18px;
+    letter-spacing: 0.9;
+  }
+
+  .connection-box {
+    margin-top: 59px;
+  }
+
+  .collaboration-box {
+    padding: 40px 0 38px 0;
+  }
+
+  .growth-box {
+    padding: 40px 0 37px 0;
   }
 }
 @media (max-width: 767px) {
