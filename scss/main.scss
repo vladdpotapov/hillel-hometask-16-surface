@@ -466,14 +466,14 @@
     z-index: -1;
 }
 
-.players__collaboration-box:after {
+.players__collaboration-box::after {
     content: '';
     display: block;
     width: 5px;
     height: 400px;
     background-color: $color-02;
     position: absolute;
-    top: -50%;
+    top: -70%;
     left: 59%;
     transform: rotate(35deg);
     z-index: 1;  
@@ -601,6 +601,9 @@
     border-radius: 5px;
     margin-top: 9px;
 }
+
+//====================================DOWNLOAD==================================
+
 //======================================MEDIA===================================
 @media (max-width: 1140px) {
     // Header
@@ -1082,6 +1085,37 @@
     .growth__text {
         letter-spacing: 0.75px;
         line-height: 18px;
+        // position: relative;
+    }
+
+    .title-h3-box--line {
+        position: relative;
+    }
+
+    .title-h3-box--line::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 150px;
+        background-color: $color-02;
+        position: absolute;
+        top: -530%;
+        left: 30%;
+        transform: rotate(35deg);
+        z-index: 1; 
+    }
+
+    .title-h3-box--line::after {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 120px;
+        background-color: $color-02;
+        position: absolute;
+        top: -750%;
+        left: 75%;
+        transform: rotate(35deg);
+        z-index: 1;
     }
 
     // Third Screen
