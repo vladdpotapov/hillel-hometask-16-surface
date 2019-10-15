@@ -11,10 +11,26 @@
     left: -55px;
 }
 
-%title-h2-count-number {
+%title-h3-count-number {
     width: 20px;
     height: 25px;
-    border-bottom: 5px solid $color-01;
-    border-radius: 2px;
+    // border-bottom: 5px solid $color-01;
+    // border-radius: 2px;
     text-align: center;
+}
+
+%item-photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+%item-text-after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 5px;
+    border-radius: 5px;
+    background: $color-01;
+    margin-top: 90px;
 }
