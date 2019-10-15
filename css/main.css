@@ -729,6 +729,117 @@ table {
   margin-top: 9px;
 }
 
+.download {
+  background-color: #0a0e34;
+}
+
+.download-overlay {
+  background-image: url(../img/download-picture.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 247px;
+}
+
+.download-link-and-text-box {
+  display: flex;
+  text-align: left;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 23%;
+  align-items: center;
+}
+
+.download-img {
+  transition: all 0.3s ease;
+}
+
+.download__link:hover .download-img {
+  opacity: 0.6;
+}
+
+.download-text-box {
+  margin-left: 34px;
+}
+
+.download__heading {
+  font-family: "Proxima Nova Bold";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4.96px;
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+}
+
+.download__text {
+  font-family: "Proxima Nova Bold";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34.49px;
+  text-transform: uppercase;
+  letter-spacing: none;
+  color: #a496ca;
+  margin-top: 18px;
+  z-index: 3;
+  position: relative;
+}
+
+.download-content-box {
+  position: relative;
+}
+
+.download-content-box::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 200px;
+  background-color: #9172e6;
+  position: absolute;
+  top: -10%;
+  left: 36.5%;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+.download-content-box::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 400px;
+  background-color: #9172e6;
+  position: absolute;
+  top: -38%;
+  left: 59%;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+.footer-overlay {
+  background-color: rgba(10, 14, 52, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 50px;
+  margin-top: 197px;
+}
+
+.contact__link, .slash {
+  font-family: "Proxima Nova Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.contact__link:hover, .slash:hover {
+  color: #5e42b0;
+}
+
 @media (max-width: 1140px) {
   .header__content-frame {
     width: 95%;
