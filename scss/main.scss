@@ -690,15 +690,65 @@
     margin-top: 197px;
 }
 
+.footer-logo-box {
+    width: 33.3%;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.icon--facebook {
+    width: 20px;
+    height: 27px;
+}
+
+.icon--twitter {
+    width: 27px;
+    height: 27px;
+}
+
+.icon--instagramm {
+    width: 26px;
+    height: 27px;
+}
+
+.icon__link {
+    margin-left: 40px;
+    transition: all 0.3s ease;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.contact-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 33.3%;
+}
+
 .contact__link, .slash {
     font-family: "Proxima Nova Regular";
     @include links (20px, 400, 20px, none, 1px, none, $color-05);
     transition: all 0.3s ease;
+    margin-left: 8px;
 
     &:hover {
         color: $color-01;
     }
 }
+
+.contact__link:first-child {
+    margin-left: 0;
+}
+
 
 //======================================MEDIA===================================
 @media (max-width: 1140px) {
@@ -922,6 +972,58 @@
         top: 86.4%;
         left: 5%
     }
+
+    // Download
+    .download-overlay {
+        padding-top: 128px;
+    }
+
+    .download-link-and-text-box {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .download__heading {
+        @include text (80px, 700, 60px, uppercase, 4.85px, $color-05);
+    }
+
+    .download-text-box {
+        margin-top: 82px;
+    }
+
+    .download__text {
+        margin-top: 30px;
+    }
+
+    .download-content-box::before {
+        top: 29%;
+        left: 17%;
+        transform: rotate(38deg);
+    }
+
+    .download-content-box::after {
+        top: 14%;
+        left: 65%;
+        transform: rotate(38deg);
+    }
+
+    .header__link-box {
+        margin-top: 198px;
+    }
+
+    .footer-overlay {
+        padding: 35px 0;
+        justify-content: center;
+    }
+
+    .footer-logo-box,
+    .contact-box {
+        display: none;
+    }
+
+    .footer {
+        margin-top: -50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -937,6 +1039,11 @@
 
     .header__topbox {
         justify-content: center;
+    }
+
+    .logo {
+        width: 137px;
+        height: 24px;
     }
 
     .coach-box {
@@ -1261,7 +1368,67 @@
         top: 90%;
         left: 5%;
     }
+
+    // Download
+    .download-overlay {
+        padding-top: 97px;
+    }
+
+    .download-content-box {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .download-text-box {
+        margin-left: 0;
+    }
+
+    .download-img {
+        width: 73px;
+        height: 78px;
+    }
+
+    .download__heading {
+        @include text (34px, 700, 34px, uppercase, 1.7px, $color-05);
+    }
+
+    .download__text {
+        @include text (15px, 700, 15px, uppercase, 0.50px, $color-04);
+        margin-top: 13px;
+    }
     
+    .download-content-box::before {
+        height: 120px;
+        top: 40%;
+        left: 12%;
+    }
+
+    .download-content-box::after {
+        height: 200px;
+        top: 25%;
+        left: 63%;
+    }
+
+    .header__link-box {
+        margin-top: 72px;
+    }
+
+    .footer {
+        margin-top: -100px;
+    }
+
+    .icon--facebook {
+        width: 10px;
+        height: 18px;
+    }
+    .icon--twitter {
+        width: 18px;
+        height: 15px;
+    }
+    .icon--instagramm {
+        width: 17px;
+        height: 17px;
+    }
 }
 
 @media (max-width: 320px) {
