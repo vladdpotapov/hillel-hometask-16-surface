@@ -193,7 +193,7 @@
     width: 678px;
     height: 950px;
     position: absolute;
-    top: 3%;
+    top: 5%;
     left: 10%;
     background-image: url(../img/footballer.png);
     background-repeat: no-repeat;
@@ -374,19 +374,22 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .players::before {                  //basketballer
     content: '';
     display: block;   
-    width: 60%;
-    height: 100%;
+    // width: 60%;
+    // height: 100%;
+    width: 768px;
+    height: 800px;
     position: absolute;
-    top: -3%;
-    left: 40%;
+    top: 1%;
+    left: 50%;
     background-image: url(../img/basketballer.png);
     background-repeat: no-repeat;
-    background-size: 87%;
+    background-size: 99%;
     z-index: 5;
 }
 
@@ -751,6 +754,22 @@
 
 
 //======================================MEDIA===================================
+@media (max-width: 1500px) {
+    .athlets::before {
+        background-size: 550px;
+        top: 10%;
+        left: -15%;
+    }
+    .title-h2-box::before {
+        top: 5%;
+        left: 2%;
+    }
+
+    .players::before {
+        left: 50%;
+    }
+
+}
 @media (max-width: 1140px) {
     // Header
     .header__content-frame {
@@ -865,8 +884,8 @@
     }
 
     .players::before {
-        top: 8%;
-        left: 40%;
+        top: 1%;
+        left: 50%;
         background-size: 100%;
     }
 
@@ -1431,43 +1450,43 @@
     }
 }
 
-@media (max-width: 320px) {
-    body {
-        min-width: 320px;
-    }
+// @media (max-width: 320px) {
+//     body {
+//         min-width: 320px;
+//     }
 
-    // Third Screen
-    .item--photo01,
-    .item--photo02,
-    .item--photo03 {
-        width: 320px;
-        min-height: 351px;
-    }
+//     // Third Screen
+//     .item--photo01,
+//     .item--photo02,
+//     .item--photo03 {
+//         width: 320px;
+//         min-height: 351px;
+//     }
 
-    .item-number-box {
-        width: 70px;
-        height: 70px;
-    }
+//     .item-number-box {
+//         width: 70px;
+//         height: 70px;
+//     }
 
-    .item-number__text {
-        @include text (14px, 700, 14px, uppercase, 0.7px, $color-05);
-    }
-    .item-number__text:after {
-        width: 16px;
-        margin-top: 23px;
-    }
+//     .item-number__text {
+//         @include text (14px, 700, 14px, uppercase, 0.7px, $color-05);
+//     }
+//     .item-number__text:after {
+//         width: 16px;
+//         margin-top: 23px;
+//     }
 
-    .item-number-box--active {
-        top: 16%;
-        left: 5%;
-    }
-    .item-number-box--contact {
-        top: 49%;
-        left: 5%;
-    }
-    .item-number-box--work {
-        top: 82%;
-        left: 5%;
-    }
+//     .item-number-box--active {
+//         top: 16%;
+//         left: 5%;
+//     }
+//     .item-number-box--contact {
+//         top: 49%;
+//         left: 5%;
+//     }
+//     .item-number-box--work {
+//         top: 82%;
+//         left: 5%;
+//     }
 
-}
+// }

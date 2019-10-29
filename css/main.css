@@ -307,7 +307,7 @@ table {
   width: 678px;
   height: 950px;
   position: absolute;
-  top: 3%;
+  top: 5%;
   left: 10%;
   background-image: url(../img/footballer.png);
   background-repeat: no-repeat;
@@ -496,19 +496,20 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .players::before {
   content: "";
   display: block;
-  width: 60%;
-  height: 100%;
+  width: 768px;
+  height: 800px;
   position: absolute;
-  top: -3%;
-  left: 40%;
+  top: 1%;
+  left: 50%;
   background-image: url(../img/basketballer.png);
   background-repeat: no-repeat;
-  background-size: 87%;
+  background-size: 99%;
   z-index: 5;
 }
 
@@ -887,6 +888,22 @@ table {
   margin-left: 0;
 }
 
+@media (max-width: 1500px) {
+  .athlets::before {
+    background-size: 550px;
+    top: 10%;
+    left: -15%;
+  }
+
+  .title-h2-box::before {
+    top: 5%;
+    left: 2%;
+  }
+
+  .players::before {
+    left: 50%;
+  }
+}
 @media (max-width: 1140px) {
   .header__content-frame {
     width: 95%;
@@ -1003,8 +1020,8 @@ table {
   }
 
   .players::before {
-    top: 8%;
-    left: 40%;
+    top: 1%;
+    left: 50%;
     background-size: 100%;
   }
 
