@@ -1610,51 +1610,5 @@ table {
     height: 17px;
   }
 }
-@media (max-width: 320px) {
-  body {
-    min-width: 320px;
-  }
-
-  .item--photo01,
-.item--photo02,
-.item--photo03 {
-    width: 320px;
-    min-height: 351px;
-  }
-
-  .item-number-box {
-    width: 70px;
-    height: 70px;
-  }
-
-  .item-number__text {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    color: #ffffff;
-  }
-
-  .item-number__text:after {
-    width: 16px;
-    margin-top: 23px;
-  }
-
-  .item-number-box--active {
-    top: 16%;
-    left: 5%;
-  }
-
-  .item-number-box--contact {
-    top: 49%;
-    left: 5%;
-  }
-
-  .item-number-box--work {
-    top: 82%;
-    left: 5%;
-  }
-}
 
 /*# sourceMappingURL=main.css.map */
