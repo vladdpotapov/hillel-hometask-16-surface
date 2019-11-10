@@ -301,6 +301,15 @@ table {
   position: relative;
 }
 
+.athlets-restriction-frame {
+  max-width: 1530px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
 .athlets::before {
   content: "";
   display: block;
@@ -354,13 +363,7 @@ table {
   left: 13.5%;
 }
 
-.content-box {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .connection-box {
-  padding: 0 0 50px 0;
   position: relative;
 }
 
@@ -499,6 +502,18 @@ table {
   overflow: hidden;
 }
 
+.players-restriction-frame {
+  max-width: 1530px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+}
+
+.players-restriction-frame--heading {
+  max-width: 1530px;
+  margin: 0 auto;
+}
+
 .players::before {
   content: "";
   display: block;
@@ -605,11 +620,6 @@ table {
   left: 59%;
   transform: rotate(35deg);
   z-index: 1;
-}
-
-.players__content-box {
-  display: flex;
-  justify-content: start;
 }
 
 .players__content-frame {
@@ -742,6 +752,11 @@ table {
   padding-top: 247px;
 }
 
+.download-content-frame {
+  max-width: 1530px;
+  margin: 0 auto;
+}
+
 .download-link-and-text-box {
   display: flex;
   text-align: left;
@@ -820,6 +835,11 @@ table {
 
 .footer-overlay {
   background-color: rgba(10, 14, 52, 0.5);
+}
+
+.footer-content-frame {
+  max-width: 1530px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 70px 50px;
@@ -892,7 +912,7 @@ table {
   .athlets::before {
     background-size: 550px;
     top: 10%;
-    left: -15%;
+    left: 0;
   }
 
   .title-h2-box::before {
@@ -973,9 +993,9 @@ table {
   }
 
   .athlets::before {
-    background-size: 550px;
+    background-size: 500px;
     top: 10%;
-    left: -25%;
+    left: -15%;
   }
 
   .title-h2-box::before {
@@ -1172,7 +1192,7 @@ table {
     margin-top: 198px;
   }
 
-  .footer-overlay {
+  .footer-content-frame {
     padding: 35px 0;
     justify-content: center;
   }
