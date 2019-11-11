@@ -542,7 +542,7 @@ table {
   background-color: #9172e6;
   position: absolute;
   top: -185%;
-  left: 82%;
+  left: 135%;
   transform: rotate(35deg);
   z-index: 1;
 }
@@ -568,7 +568,7 @@ table {
   background-size: cover;
   position: absolute;
   top: -25%;
-  left: 192%;
+  left: 180%;
 }
 
 .players__title-h2:after {
@@ -581,12 +581,16 @@ table {
   background-size: cover;
   position: absolute;
   top: 0%;
-  left: 200%;
+  left: 185%;
 }
 
 .players__connection-box {
   padding: 0 0 50px 0;
   margin-top: 94px;
+}
+
+.players__title-h3-box {
+  margin-top: 80px;
 }
 
 .players__collaboration-box {
@@ -617,9 +621,13 @@ table {
   background-color: #9172e6;
   position: absolute;
   top: -70%;
-  left: 59%;
+  left: 63%;
   transform: rotate(35deg);
   z-index: 1;
+}
+
+.players__content-box {
+  margin-top: 0;
 }
 
 .players__content-frame {
@@ -915,6 +923,26 @@ table {
     left: 0;
   }
 
+  .players__title-h2-box::before {
+    height: 300px;
+    top: -60%;
+    left: 118%;
+  }
+
+  .players__title-h2::before {
+    left: 155%;
+  }
+
+  .players__title-h2::after {
+    left: 165%;
+  }
+
+  .players__collaboration-box::after {
+    height: 250px;
+    top: -70%;
+    left: 65%;
+  }
+
   .title-h2-box::before {
     top: 5%;
     left: 2%;
@@ -1040,8 +1068,8 @@ table {
   }
 
   .players::before {
-    top: 1%;
-    left: 50%;
+    top: 5%;
+    left: 45%;
     background-size: 100%;
   }
 
@@ -1431,7 +1459,7 @@ table {
     width: 100%;
     height: 100%;
     background-size: 90%;
-    top: 23%;
+    top: 8%;
     left: 0;
     z-index: 3;
   }
