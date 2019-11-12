@@ -197,21 +197,33 @@
     position: relative;                 //for "plus" figure on a background
 }
 // Athlets - Footballer Image
-.athlets::before {
+// .athlets::before {
+//     content: '';
+//     display: block;
+//     width: 678px;
+//     height: 950px;
+//     position: absolute;
+//     top: 5%;
+//     left: 10%;
+//     background-image: url(../img/footballer.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     z-index: 2;
+// }
+
+.text--footballer::before {
     content: '';
     display: block;
     width: 678px;
     height: 950px;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: -250%;
+    left: -100%;
     background-image: url(../img/footballer.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
 }
-
-
 // Athlets - Background Dioganal Line
 .title-h2-box::before {
     content: '';
@@ -537,6 +549,8 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    max-width: 1530px;
+    margin: 0 auto;
 }
 
 .item {
@@ -795,11 +809,18 @@
 
 //======================================MEDIA===================================
 @media (max-width: 1500px) {
-    .athlets::before {
-        background-size: 550px;
-        top: 10%;
-        left: 0;
+    // .athlets::before {
+    //     background-size: 550px;
+    //     top: 10%;
+    //     left: 0;
+    // }
+
+    .text--footballer::before {
+    background-size: 550px;
+    top: -230%;
+    left: -95;
     }
+
     .players__title-h2-box::before {
         height: 300px;
         top: -60%;
@@ -896,12 +917,16 @@
         min-width: 60%;
     }
 
-    .athlets::before {
-        // background-size: 550px;
+    // .athlets::before {
+    //     background-size: 500px;
+    //     top: 10%;
+    //     left: -15%;
+    // }
+
+    .text--footballer::before {
         background-size: 500px;
-        top: 10%;
-        // left: -25%;
-        left: -15%;
+        top: -180%;
+        left: -97%;
     }
 
     .title-h2-box::before {
@@ -1280,11 +1305,19 @@
         min-width: 60%;
     }
 
-    .athlets::before {
+    // .athlets::before {
+    //     width: 192px;
+    //     height: 281px;
+    //     background-size: 200px;
+    //     top: 14.5%;
+    //     left: 25%;
+    // }
+
+    .text--footballer::before {
         width: 192px;
         height: 281px;
         background-size: 200px;
-        top: 14.5%;
+        top: -115%;
         left: 25%;
     }
 
@@ -1526,3 +1559,43 @@
     }
 }
 
+@media (max-width: 766px) {
+    .text--footballer::before {
+        top: -110%;
+        left: 30%;
+    }
+}
+
+// @media (max-width: 560px) {
+//     .text--footballer::before {
+//         top: -120%;
+//         left: 30%;
+//     }
+// }
+@media (max-width: 767px) {
+    .text--footballer::before {
+        top: -165%;
+        left: 35%;
+    }
+}
+
+@media (max-width: 560px) {
+    .text--footballer::before {
+        top: -140%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 439px) {
+    .text--footballer::before {
+        top: -125%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 366px) {
+    .text--footballer::before {
+        top: -115%;
+        left: 30%;
+    }
+}
